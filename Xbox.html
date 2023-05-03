@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <link rel = "shortcut icon" href = "MC.png">
+    <link rel = "stylesheet" href = "styles.css">
+  </head>
+<body>
+  <div class="header">
+      <div class="top-nav" style="border-bottom: 2px solid rgb(16, 124, 16);">
+        <ul>
+          <li> <a href ="index.html" class = "acive"> Home </a></li>
+          <li> <a href ="Nintendo.html" class = "active"> Nintendo </a></li>
+          <li> <a href ="Xbox.html" class = "active"> Xbox </a></li>
+          <li> <a href ="Playstation.html" class = "active"> Playstation </a></li>
+        </ul>
+        <button style="background-color: rgb(16, 124, 16);" id="poll-btn"><span style="color: white;"> Take a vote!</span></button>
+
+<div id="poll-modal" style="display:none;">
+  <h2 style="color: white;">Select your favorite :)</h2>
+  <form>
+    <input type="radio" id="Nintendo" name="poll-option" value="Nintendo">
+    <label style="color: white;" for="Nintendo">Nintendo</label><br>
+    <input type="radio" id="Xbox" name="poll-option" value="Xbox">
+    <label style="color: white;" for="Xbox">Xbox</label><br>
+    <input type="radio" id="PlayStation" name="poll-option" value="PlayStation">
+    <label style="color: white;" for="PlayStation">Playstation</label><br>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<script>
+  var pollBtn = document.getElementById('poll-btn');
+  var pollModal = document.getElementById('poll-modal');
+
+  function displayPoll() {
+    pollModal.style.display = 'block';
+  }
+
+  function hidePoll() {
+    pollModal.style.display = 'none';
+  }
+
+  pollBtn.addEventListener('click', displayPoll);
+
+  var pollForm = document.querySelector('#poll-modal form');
+  pollForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    hidePoll();
+    var pollOption = pollForm.querySelector('input[name="poll-option"]:checked').value;
+    alert("You selected " + pollOption);
+  });
+</script>
+    </div>
+
+    <table>
+      <tr>
+        <td style="color: white;"><img src="Xbox.png"> </td>
+        <td style="color: white;"> <span style="font-size: 24px;">Xbox: </span> The Original Xbox, also known as the Xbox Classic or the Xbox 1, is a video game console released by Microsoft in 2001. It was the first gaming console developed by Microsoft and competed with other consoles of its generation, such as the PlayStation 2 and Nintendo GameCube.
+
+          The Original Xbox was known for its powerful hardware and was the first console to feature an internal hard drive, which allowed for more advanced game features and storage of music and media files. It also featured a built-in Ethernet port, which allowed for online multiplayer gaming.
+          
+          Some of the most popular games released for the Original Xbox include Halo: Combat Evolved, Project Gotham Racing, and Fable. These games helped establish the Xbox as a serious contender in the gaming industry and helped build a dedicated fanbase for the console.
+          
+          Despite being discontinued in 2009, the Original Xbox remains a beloved classic among gamers and collectors alike, and its impact on the gaming industry is still felt today.</td>
+      </tr>
+      <tr>
+        <td> <img src="Xbox 360.png"></td>
+        <td style="color: white;">  <span style="font-size: 24px;">Xbox 360: </span>
+           The Xbox 360 is a video game console released by Microsoft in 2005. It was the successor to the Original Xbox and competed with other consoles of its generation, such as the PlayStation 3 and Nintendo Wii.
+
+          The Xbox 360 featured powerful hardware and was the first console to support high-definition graphics and wireless controllers. It also had a built-in Ethernet port and supported online gaming through the Xbox Live service, which allowed players to connect and play with each other from around the world.
+          
+          Some of the most popular games released for the Xbox 360 include the Halo series, Gears of War, and Call of Duty. These games helped establish the Xbox 360 as a dominant force in the gaming industry and helped build a dedicated fanbase for the console.
+          
+          The Xbox 360 was discontinued in 2016, but it remains a popular console among gamers and collectors. Its impact on the gaming industry is still felt today, and many of its games continue to be played and enjoyed by players all over the world.</td>
+      </tr>
+      <tr>
+        <td><img src="Xbox One.png"> </td>
+        <td style="color: white;"> <span style="font-size: 24px;">Xbox One: </span>
+           The Xbox One is a video game console released by Microsoft in 2013. It is the successor to the Xbox 360 and competes with other consoles of its generation, such as the PlayStation 4 and Nintendo Wii U.
+
+          The Xbox One features powerful hardware and supports high-definition graphics and 4K video output. It also has a built-in Ethernet port and supports online gaming through the Xbox Live service, which allows players to connect and play with each other from around the world.
+          
+          One of the defining features of the Xbox One is its integration with other Microsoft products and services, such as Windows 10 and Cortana voice assistant. It also supports backwards compatibility, allowing players to play select Xbox 360 games on the Xbox One.
+          
+          Some of the most popular games released for the Xbox One include the Halo series, Gears of War 4, and Forza Horizon 4. These games have helped establish the Xbox One as a popular console among gamers and helped build a dedicated fanbase for the console.
+          
+          Although it has been succeeded by the Xbox Series X and Series S, the Xbox One remains a popular console among gamers and continues to receive new games and updates.</td>
+      </tr>
+      <tr>
+        <td><img src="Xbox Series.png"></td>
+        <td style="color: white;"> <span style="font-size: 24px;">Xbox Series: </span>
+          The Xbox Series is a family of video game consoles released by Microsoft in 2020. It consists of two models: the Xbox Series X, which is the high-end model, and the Xbox Series S, which is a more affordable and streamlined version.
+          
+          The Xbox Series consoles feature powerful hardware and support high-definition graphics, 4K video output, and high refresh rates. They also have built-in Ethernet ports and support online gaming through the Xbox Live service, which allows players to connect and play with each other from around the world.
+          
+          One of the defining features of the Xbox Series consoles is their backwards compatibility with games from previous Xbox generations, including the Xbox, Xbox 360, and Xbox One. They also support Game Pass, a subscription service that provides access to a library of games that can be downloaded and played on the console.
+          
+          Some of the most popular games released for the Xbox Series include Halo Infinite, Forza Horizon 5, and Fable. These games have helped establish the Xbox Series as a powerful and popular console among gamers and helped build a dedicated fanbase for the console.
+          
+          Overall, the Xbox Series is a continuation of Microsoft's commitment to providing gamers with cutting-edge technology and immersive gaming experiences.</td>
+      </tr>
+      <tr>
+        <td><img src="Xbox Game Studios.png"></td>
+        <td style="color: white;"> <span style="font-size: 24px;">Xbox Game Studios: </span>
+          Xbox Game Studios is a division of Microsoft that develops and publishes video games exclusively for the Xbox consoles and Windows PCs. The division was formerly known as Microsoft Studios and has been responsible for developing some of the most popular and critically acclaimed games in the industry.
+
+          Xbox Game Studios includes a variety of development studios, including 343 Industries, The Coalition, and Rare, among others. These studios are responsible for creating games across a wide range of genres, including first-person shooters, racing games, and adventure games.
+          
+          Some of the most popular games developed and published by Xbox Game Studios include the Halo series, Gears of War, Forza Horizon, and Minecraft. These games have helped establish Xbox Game Studios as a leading force in the gaming industry and have built a dedicated fanbase for the division's games.
+          
+          Xbox Game Studios also works closely with independent developers to publish their games on Xbox consoles and Windows PCs through programs. This allows independent developers to reach a wider audience and provides gamers with a diverse range of games to play.
+          
+          Overall, Xbox Game Studios is a crucial component of the Xbox ecosystem and plays a significant role in shaping the future of gaming on Xbox consoles and Windows PCs.</td>
+      </tr>      
+    </table>
+
+   
+
+    
+  </nav>
+
+
+
+
+
+
+
+</body>
+
+<div class="footer">
+  <footer>&copy;Copyright Christopher Rios & Sebastian Hinojosa</footer> 
+</div>
+
+
+</html>

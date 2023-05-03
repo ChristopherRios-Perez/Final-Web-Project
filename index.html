@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <link rel = "shortcut icon" href = "Web Icon.png">
+    <link rel = "stylesheet" href = "styles.css">
+  </head>
+<body>
+  <div class="header">
+      <div class="top-nav"  style="border-bottom: 2px solid rgb(255, 255, 255);">
+        <ul>
+          <li> <a href ="index.html" class = "acive"> Home </a></li>
+          <li> <a href ="Nintendo.html" class = "active"> Nintendo </a></li>
+          <li> <a href ="Xbox.html" class = "active"> Xbox </a></li>
+          <li> <a href ="Playstation.html" class = "active"> Playstation </a></li>
+        </ul>
+
+        <button style="background-color: white;" id="poll-btn"><span style="color: black;">Take a vote !</span></button>
+
+<div id="poll-modal" style="display:none;">
+  <h2 style="color: white;">Select your favorite :)</h2>
+  <form>
+    <input type="radio" id="Nintendo" name="poll-option" value="Nintendo">
+    <label style="color: white;" for="Nintendo">Nintendo</label><br>
+    <input type="radio" id="Xbox" name="poll-option" value="Xbox">
+    <label style="color: white;" for="Xbox">Xbox</label><br>
+    <input type="radio" id="PlayStation" name="poll-option" value="PlayStation">
+    <label style="color: white;" for="PlayStation">Playstation</label><br>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<script>
+  var pollBtn = document.getElementById('poll-btn');
+  var pollModal = document.getElementById('poll-modal');
+
+  function displayPoll() {
+    pollModal.style.display = 'block';
+  }
+
+  function hidePoll() {
+    pollModal.style.display = 'none';
+  }
+
+  pollBtn.addEventListener('click', displayPoll);
+
+  var pollForm = document.querySelector('#poll-modal form');
+  pollForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    hidePoll();
+    var pollOption = pollForm.querySelector('input[name="poll-option"]:checked').value;
+    alert("You selected " + pollOption);
+  });
+</script>
+    </div>
+
+    <table>
+      <tr> 
+        <td>
+        <a href="Nintendo.html">
+        <img src="Nintendo Logo.png"> </td></a>
+        <td style="color: white;"> <span style="font-size: 24px; color: red;">Nintendo:</span>
+          Nintendo is a Japanese multinational company that has been a leading player in the video game industry for decades. The company is best known for creating some of the most iconic video game franchises of all time, including Super Mario Bros., The Legend of Zelda, and Pokémon.
+
+          Nintendo has released numerous home consoles and handheld devices over the years, including the Nintendo Entertainment System (NES), Game Boy, Nintendo 64, GameCube, Wii, and Nintendo Switch. Each console has introduced new innovations and unique features that have helped shape the video game industry.
+          
+          One of the defining features of Nintendo's games and consoles is their family-friendly focus. Many of Nintendo's games are designed to be enjoyed by players of all ages, and the company has always placed an emphasis on creating games that promote social interaction and cooperation.
+          
+          In addition to its video game business, Nintendo also produces a variety of merchandise and toys based on its popular franchises. The company has also expanded into mobile gaming in recent years, with popular titles like Pokémon GO and Animal Crossing: Pocket Camp.
+          
+          Overall, Nintendo has had a significant impact on the video game industry and continues to innovate and create new experiences for gamers of all ages.</td>
+      </tr>
+      <tr>
+        <td> 
+          <a href="Playstation.html"> 
+          <img src="Playstation Logo.png"></td> </a>
+        <td style="color: white;">  <span style="font-size: 24px; color: rgb(0, 110, 225);">Playstation:</span>
+          PlayStation is a video game brand created by Sony Interactive Entertainment that has become a household name in the gaming industry. It is home to some of the most popular and critically acclaimed video game franchises, including God of War, Uncharted, and Gran Turismo.
+
+PlayStation consoles have been a mainstay in the gaming industry for over two decades, with the original PlayStation launching in 1994. Sony has since released numerous consoles, including the PlayStation 2, PlayStation 3, PlayStation 4, and the latest PlayStation 5, which features cutting-edge hardware and performance.
+
+PlayStation consoles have consistently offered high-quality graphics and immersive gameplay experiences, with a focus on single-player games that offer cinematic storylines and engaging characters. PlayStation also offers online gaming through its PlayStation Plus service, which allows players to connect and play with others from around the world.
+
+In addition to gaming, PlayStation also offers a variety of entertainment options, including streaming services like Netflix and Hulu, as well as Blu-ray and DVD playback. The brand has also expanded into virtual reality with the release of the PlayStation VR headset, which allows players to fully immerse themselves in their favorite games.
+
+Overall, PlayStation has established itself as a leading player in the gaming industry, with a loyal fanbase and an impressive library of games that continue to push the boundaries of what is possible in the world of gaming.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Xbox.html">
+          <img src="Xbox Logo.png"> </td> </a>
+        <td style="color: white;"> <span style="font-size: 24px; color: rgb(16, 124, 16);">Xbox:</span>
+          Xbox is a video game brand created by Microsoft that has become a household name in the gaming industry. It is home to some of the most popular and critically acclaimed video game franchises, including Halo, Forza, and Gears of War.
+
+          Xbox consoles have been a mainstay in the gaming industry for over two decades, with the original Xbox launching in 2001. Microsoft has since released numerous consoles, including the Xbox 360, Xbox One, and the latest Xbox Series X|S, which features cutting-edge hardware and performance.
+          
+          Xbox consoles have consistently offered high-quality graphics and immersive gameplay experiences, with a focus on online gaming and community features. Xbox Live Gold and Xbox Game Pass are subscription services that provide access to a wide range of games and exclusive content, as well as online multiplayer gaming.
+          
+          In addition to gaming, Xbox also offers a variety of entertainment options, including streaming services like Netflix and Hulu, as well as the ability to watch live TV through an HDMI input. The brand has also expanded into game streaming with the release of Xbox Cloud Gaming, which allows players to stream games on their devices without needing to download them.
+          
+          Overall, Xbox has established itself as a leading player in the gaming industry, with a dedicated fanbase and an impressive library of games that continue to push the boundaries of what is possible in the world of gaming.</td>
+      </tr> 
+    </table>
+
+
+
+    
+  </nav>
+
+
+
+
+
+
+
+</body>
+
+<div class="footer">
+  <footer>&copy;Copyright Christopher Rios & Sebastian Hinojosa</footer> 
+</div>
+
+
+</html>
